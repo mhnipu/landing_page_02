@@ -17,7 +17,7 @@ const Navbar = () => {
     ];
     return (
         <>
-            <nav className='bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-DarkGray fixed top-0 right-0 left-0'>
+            <nav className='backdrop-filter backdrop-blur-lg bg-opacity-60  bg-white md:px-14 p-4 max-w-screen-2xl  mx-auto text-NeviDBlue fixed top-0 right-0 left-0 font-bold'>
                 <div className='text-lg container mx-auto flex justify-between items-center font-medium ' >
                     <div className='flex space-x-14 items-center'>
                         <a href="/" className='text-3xl  text-bold flex items-center space-x-3 text-lightGray  '><img src={logo_2} alt="" className='w-21 h-13 inline-block items-center hover:scale-95 transition-all duration-300' /></a>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     {/* language btn & signup btn */}
                     <div className="space-x-12 hidden md:flex items-center">
                         <a href="" className="hidden lg:flex items-center hover:scale-95 transition-all duration-300 text-televersantBlue"><GrLanguage className='mr-2' /><span>Language</span></a>
-                        <button className="bg-televersantBlue text-white py-2 px-4 hover:scale-95 transition-all duration-300 rounded hover:text-white hover:bg-televersantBlue">Sign up</button>
+                        <button className="btn-primary">Sign up</button>
                     </div>
                     {/* menu btn only mobile display */}
                     <div className="md:hidden">
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={`space-y-4  px-5 pt-24 pb-5 bg-televersantlightDBlue text-lg ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"} `}>
+            <div className={`backdrop-filter backdrop-blur-lg bg-opacity-60 space-y-4 px-5 pt-24 pb-5 bg-televersantlightBlue text-lg ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"} `}>
                 {
                     navItems.map(({
                         link, path
@@ -53,8 +53,6 @@ const Navbar = () => {
                 }
             </div>
         </>
-
-
     )
 }
 

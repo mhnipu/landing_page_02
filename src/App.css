@@ -9,3 +9,21 @@ body {
 nav {
   z-index: 10001 !important;
 }
+
+.btn-primary {
+  @apply py-2 px-4 bg-televersantBlue font-semibold text-white rounded hover:bg-cyan-500 transition-all duration-300 hover:scale-90
+}
+
+.btnSecondary {
+  @apply bg-transparent hover:bg-cyan-500 transition-all duration-300 hover:scale-90 text-white font-semibold hover:text-white py-2 px-4 border border-cyan-100 hover:border-transparent rounded
+}
+
+.gradientBg {
+  background: linear-gradient(155deg, #1a9ab8ff 40%, #6cb4ee 90%);
+
+}
+
+.transparent {
+
+  @apply backdrop-filter backdrop-blur-lg bg-opacity-30;
+}

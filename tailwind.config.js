@@ -15,9 +15,12 @@ export default {
         'gray900': '#18191f',
         'televersantBlue': '#1a9ab8ff',
         'televersantDBlue': '#218ca2ff',
-        'televersantlightDBlue': '#c8e2f7',
-
-
+        'televersantlightBlue': '#d7e8f5',
+        'televersantlightDBlue': '#6cb4eeff',
+        'NeviDBlue': '#010851',
+      },
+      boxShadow: {
+        '3xl': '0px 10px 50px 0px rgba(0, 0, 0, 0.15)',
       }
     },
   },
